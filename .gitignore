@@ -16,6 +16,7 @@ _site
 *.vi
 *~
 # *.lock
+resources/
 
 # OS or Editor folders
 *.scssc
@@ -30,3 +31,4 @@ Thumbs.db
 public
 # Folders to ignore
 node_modules
+resources/_gen/assets/css/css/styles.css_6f0403bfb3219942b9af0c74c707140a.content
