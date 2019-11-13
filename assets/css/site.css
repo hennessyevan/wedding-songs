@@ -1,0 +1,32 @@
+.hover-push-top {
+  transition: 225ms;
+}
+.hover-push-top:hover {
+  transform: translateY(-4px);
+  z-index: -1;
+}
+.icon {
+  width: 20px;
+}
+.badge {
+  text-transform: uppercase;
+  padding: 2px 6px;
+  font-size: 0.65rem;
+  @apply mr-2 text-white rounded font-medium;
+}
+
+.badge.entrance {
+  @apply bg-yellow-500;
+}
+.badge.offertory {
+  @apply bg-blue-500;
+}
+.badge.communion {
+  @apply bg-green-500;
+}
+.badge.recessional {
+  @apply bg-red-500;
+}
+.badge.register {
+  @apply bg-purple-500;
+}

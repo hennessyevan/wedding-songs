@@ -1,0 +1,73 @@
+- name: Sweet Aroma
+  artist: Joe Zambon
+  service: youtube
+  url: https://www.youtube.com/watch?v=fizJsTGnVfM
+  place:
+    - entrance
+    - offertory
+
+- name: Ave Maria
+  artist: Traditional
+  place:
+    - offertory
+    - communion
+
+- name: Your Love is Extravagant
+  artist: Matt Maher
+  url: https://www.youtube.com/watch?v=IE3Mp1YVlX8
+  service: youtube
+  place:
+    - entrance
+    - offertory
+    - communion
+    - register
+
+- name: Your Love Never Fails
+  artist: Jesus Culture
+  service: youtube
+  url: https://www.youtube.com/watch?v=6_KXsMCJgBQ
+  place:
+    - entrance
+    - offertory
+    - communion
+
+- name: My Only Love
+  artist: Matt Maher
+  service: youtube
+  url: https://www.youtube.com/watch?v=eQiXDYCI8a0
+  place:
+    - communion
+    - register
+
+- name: High Above
+  artist: Brian & Katie Torwalt
+  service: youtube
+  url: https://www.youtube.com/watch?v=cUpTDmsAvEU
+  place:
+    - entrance
+    - offertory
+    - register
+
+- name: Joy
+  artist: Joe Zambon
+  url: https://www.youtube.com/watch?v=qF5_Vwk0Eyc
+  service: youtube
+  place:
+    - entrance
+    - recessional
+
+- name: Relentless
+  artist: Hillsong United
+  service: youtube
+  url: https://www.youtube.com/watch?v=A3O_pAOiGuo
+  place:
+    - entrance
+    - recessional
+
+- name: Love Comes Down
+  artist: Matt Maher
+  service: youtube
+  url: https://www.youtube.com/watch?v=ENcwWGfZWzQ
+  place:
+    - recessional
+    - entrance
