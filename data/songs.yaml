@@ -1,10 +1,10 @@
-- name: Sweet Aroma
-  artist: Joe Zambon
-  service: youtube
-  url: https://www.youtube.com/watch?v=fizJsTGnVfM
-  place:
-    - entrance
-    - offertory
+# - name: Sweet Aroma
+#   artist: Joe Zambon
+#   service: youtube
+#   url: https://www.youtube.com/watch?v=fizJsTGnVfM
+#   place:
+#     - procession
+#     - offertory
 
 - name: Ave Maria
   artist: Traditional
@@ -17,7 +17,7 @@
   url: https://www.youtube.com/watch?v=IE3Mp1YVlX8
   service: youtube
   place:
-    - entrance
+    - procession
     - offertory
     - communion
     - register
@@ -27,7 +27,7 @@
   service: youtube
   url: https://www.youtube.com/watch?v=6_KXsMCJgBQ
   place:
-    - entrance
+    - procession
     - offertory
     - communion
 
@@ -44,7 +44,7 @@
   service: youtube
   url: https://www.youtube.com/watch?v=cUpTDmsAvEU
   place:
-    - entrance
+    - procession
     - offertory
     - register
 
@@ -53,21 +53,71 @@
   url: https://www.youtube.com/watch?v=qF5_Vwk0Eyc
   service: youtube
   place:
-    - entrance
-    - recessional
+    - procession
+    - recession
 
 - name: Relentless
   artist: Hillsong United
   service: youtube
   url: https://www.youtube.com/watch?v=A3O_pAOiGuo
   place:
-    - entrance
-    - recessional
+    - procession
+    - recession
 
 - name: Love Comes Down
   artist: Matt Maher
   service: youtube
   url: https://www.youtube.com/watch?v=ENcwWGfZWzQ
   place:
-    - recessional
-    - entrance
+    - recession
+    - procession
+
+- name: 10,000 reasons (Bless the Lord)
+  artist: Matt Redman
+  service: youtube
+  url: https://www.youtube.com/watch?v=XtwIT8JjddM
+  place:
+    - recession
+    - offertory
+    - procession
+
+- name: Good Good Father
+  artist: Chris Tomlin
+  service: youtube
+  url: https://www.youtube.com/watch?v=CqybaIesbuA
+  place:
+    - recession
+    - procession
+
+- name: How He Loves
+  artist: David Crowder
+  service: youtube
+  url: https://www.youtube.com/watch?v=GzfPHnoT0-0
+  place:
+    - register
+    - offertory
+    - procession
+
+- name: Come Thou Fount
+  artist: Traditional
+  service: youtube
+  url: https://www.youtube.com/watch?v=BRVNZPyMOcM
+  place:
+    - offertory
+    - procession
+
+- name: Lord I Need You
+  artist: Matt Maher
+  service: youtube
+  url: https://www.youtube.com/watch?v=LuvfMDhTyMA
+  place:
+    - offertory
+    - register
+
+- name: God is Able
+  artist: Hillsong
+  service: youtube
+  url: https://www.youtube.com/watch?v=y7l52g9p11s
+  place:
+    - procession
+    - recession
