@@ -15,7 +15,7 @@
   @apply mr-2 text-white rounded font-medium;
 }
 
-.badge.entrance {
+.badge.procession {
   @apply bg-yellow-500;
 }
 .badge.offertory {
@@ -24,7 +24,7 @@
 .badge.communion {
   @apply bg-green-500;
 }
-.badge.recessional {
+.badge.recession {
   @apply bg-red-500;
 }
 .badge.register {
