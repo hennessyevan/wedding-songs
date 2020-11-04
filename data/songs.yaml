@@ -6,6 +6,13 @@
     - procession
     - offertory
 
+- name: Glorious Day
+  artist: Kristian Stanfil
+  service: youtube
+  url: https://www.youtube.com/watch?v=gklJ2XZwDHc
+  place:
+    - recession
+
 - name: Ave Maria
   artist: Traditional
   place:
