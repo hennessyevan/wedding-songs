@@ -1,10 +1,10 @@
-# - name: Sweet Aroma
-#   artist: Joe Zambon
-#   service: youtube
-#   url: https://www.youtube.com/watch?v=fizJsTGnVfM
-#   place:
-#     - procession
-#     - offertory
+- name: Sweet Aroma
+  artist: Joe Zambon
+  service: youtube
+  url: https://www.youtube.com/watch?v=fizJsTGnVfM
+  place:
+    - procession
+    - offertory
 
 - name: Ave Maria
   artist: Traditional
