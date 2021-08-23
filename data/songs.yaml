@@ -5,6 +5,15 @@
   place:
     - procession
     - offertory
+    
+- name: Wedding Song
+  artist: Paul Stookey
+  service: youtube
+  url: https://www.youtube.com/watch?v=rdNPEX7bY-k
+  place:
+    - procession
+    - offertory
+    - recession
 
 - name: Glorious Day
   artist: Kristian Stanfil
