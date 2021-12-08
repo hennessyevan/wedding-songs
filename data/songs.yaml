@@ -1,24 +1,20 @@
 - name: Sweet Aroma
   artist: Joe Zambon
-  service: youtube
-  url: https://www.youtube.com/watch?v=fizJsTGnVfM
+  url: https://songwhip.com/joezambon/sweet-aroma
   place:
     - procession
     - offertory
     
-- name: Wedding Song
-  artist: Paul Stookey
-  service: youtube
-  url: https://www.youtube.com/watch?v=rdNPEX7bY-k
+- name: Wedding Song (There Is Love)
+  artist: Noel Paul Stookey
   place:
     - procession
     - offertory
     - recession
 
 - name: Glorious Day
-  artist: Kristian Stanfil
-  service: youtube
-  url: https://www.youtube.com/watch?v=gklJ2XZwDHc
+  artist: Passion, Kristian Stanfil
+  url: https://songwhip.com/passion/gloriousdayradioversion
   place:
     - recession
 
@@ -30,8 +26,6 @@
 
 - name: Your Love is Extravagant
   artist: Matt Maher
-  url: https://www.youtube.com/watch?v=IE3Mp1YVlX8
-  service: youtube
   place:
     - procession
     - offertory
@@ -40,8 +34,6 @@
 
 - name: Your Love Never Fails
   artist: Jesus Culture
-  service: youtube
-  url: https://www.youtube.com/watch?v=6_KXsMCJgBQ
   place:
     - procession
     - offertory
@@ -49,16 +41,12 @@
 
 - name: My Only Love
   artist: Matt Maher
-  service: youtube
-  url: https://www.youtube.com/watch?v=eQiXDYCI8a0
   place:
     - communion
     - register
 
 - name: High Above
-  artist: Brian & Katie Torwalt
-  service: youtube
-  url: https://www.youtube.com/watch?v=cUpTDmsAvEU
+  artist: Bryan and Katie Torwalt
   place:
     - procession
     - offertory
@@ -66,32 +54,25 @@
 
 - name: Joy
   artist: Joe Zambon
-  url: https://www.youtube.com/watch?v=qF5_Vwk0Eyc
-  service: youtube
+  url: https://songwhip.com/joezambon/joy
   place:
     - procession
     - recession
 
 - name: Relentless
   artist: Hillsong United
-  service: youtube
-  url: https://www.youtube.com/watch?v=A3O_pAOiGuo
   place:
     - procession
     - recession
 
 - name: Love Comes Down
   artist: Matt Maher
-  service: youtube
-  url: https://www.youtube.com/watch?v=ENcwWGfZWzQ
   place:
     - recession
     - procession
 
 - name: 10,000 reasons (Bless the Lord)
   artist: Matt Redman
-  service: youtube
-  url: https://www.youtube.com/watch?v=XtwIT8JjddM
   place:
     - recession
     - offertory
@@ -99,16 +80,12 @@
 
 - name: Good Good Father
   artist: Chris Tomlin
-  service: youtube
-  url: https://www.youtube.com/watch?v=CqybaIesbuA
   place:
     - recession
     - procession
 
 - name: How He Loves
-  artist: David Crowder
-  service: youtube
-  url: https://www.youtube.com/watch?v=GzfPHnoT0-0
+  artist: David Crowder Band
   place:
     - register
     - offertory
@@ -116,24 +93,57 @@
 
 - name: Come Thou Fount
   artist: Traditional
-  service: youtube
-  url: https://www.youtube.com/watch?v=BRVNZPyMOcM
+  url: https://songwhip.com/chris-tomlin/come-thou-fount-i-will-sing
   place:
     - offertory
     - procession
 
 - name: Lord I Need You
   artist: Matt Maher
-  service: youtube
-  url: https://www.youtube.com/watch?v=LuvfMDhTyMA
   place:
     - offertory
     - register
 
 - name: God is Able
-  artist: Hillsong
-  service: youtube
-  url: https://www.youtube.com/watch?v=y7l52g9p11s
+  artist: Hillsong Worship
   place:
     - procession
     - recession
+
+- name: Absolutely
+  artist: Starfield
+  place: 
+    - procession
+    - offertory
+    - communion
+    - register
+
+- name: Beautiful Things
+  artist: Gungor
+  place: 
+    - offertory
+    - communion
+    - register
+
+- name: Garden
+  artist: Matt Maher
+  place: 
+    - offertory
+    - communion
+    - register
+
+- name: Jesus I Love You
+  artist: Joe Zambon
+  url: https://songwhip.com/joezambon/jesus-i-love-you
+  place: 
+    - procession
+    - offertory
+    - communion
+    - register
+
+- name: King of My Heart
+  artist: John Mark McMillan
+  place: 
+    - offertory
+    - communion
+    - register

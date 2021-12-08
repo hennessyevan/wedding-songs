@@ -1,51 +1,58 @@
 {{ define "main" }}
 
-<div class="py-16">
+<div class="py-16 flex flex-col items-start mx-auto max-w-md text-gray-700">
 
- <h3 class="mx-auto mb-6 max-w-md text-2xl font-semibold text-gray-800">Nativity Band Wedding Songs</h3>
+<h3 class="mb-6 text-2xl font-semibold text-gray-800">Nativity Band Wedding Hymns</h3>
+<div class="text-sm">
+  <p>
+    Below you will find a list of songs that we played at weddings in the past.
+  </p>
+  <br />
+  <p>
+    You'll notice <span class="badge offertory mr-0">tags</span> on each song that are suggestions of when to include
+    them in
+    the
+    wedding service or mass. While
+    we
+    think these are helpful, feel free to use these hymns at any point in the mass/service.
+  </p>
+  <br />
+  <p>
+    While we are open to other hymn suggestions, the instruction of the Catholic Church required that a song needs to be
+    able to be
+    considered appropriate as a hymn to be played at a mass. This usually means that the song references or is based on
+    scripture, the liturgy, the Sacraments, etc.
+  </p>
+  <br />
+  <p>
+    This includes any songs that you hear at one of our masses, worship songs, traditional hymns, songs that speak
+    directly about the liturgy of the Sacrament of Marriage or songs that are based on scripture, etc.
+  </p>
+</div>
+
  {{ range sort $.Site.Data.songs "name" }}
- {{with .url}}
- <a href="{{.}}" target="_blank">
-  {{end}}
+  {{ $url := .url | default (printf "//songwhip.com/%s/%s" (urlize .artist) (urlize .name)) }}
+  <a class="w-full" href="{{ $url  }}" target="_blank">
   <div
-   class="mx-auto rounded overflow-hidden shadow-md hover:shadow-lg bg-white max-w-md cursor-pointer hover-push-top my-3">
+   class="mx-auto rounded overflow-hidden shadow-md hover:shadow-lg bg-white cursor-pointer hover-push-top my-3 w-full">
 
-   <div class="px-6 py-5 flex flex-initial justify-between items-center">
+  <div class="px-6 py-5 flex flex-initial justify-between items-center text-black">
     <div class="flex flex-col">
      <span class="font-medium text-base">{{.name}}</span>
      <span class="text-sm text-blue-600 font-light">{{.artist}}</span>
     </div>
 
+    {{with $url}}
     <div class="flex items-center">
-     <span class="text-xs mr-2 text-gray-600">Listen</span>
-     {{if eq .service "youtube" }}
-     <svg class="stroke-current icon text-gray-600" fill="none" stroke-width="2" stroke-linecap="round"
+      <span class="text-xs mr-2 text-gray-600">Listen</span>
+    <svg class="stroke-current icon text-gray-600" fill="none" stroke-width="2" stroke-linecap="round"
       stroke-linejoin="round" id="Regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <title>social-video-youtube</title>
-      <path
-       d="M23.25,7.44A3.44,3.44,0,0,0,19.81,4H4.19A3.44,3.44,0,0,0,.75,7.44v9.12A3.44,3.44,0,0,0,4.19,20H19.81a3.44,3.44,0,0,0,3.44-3.44ZM9.5,15.94V7.28l6.77,4.33Z" />
-     </svg>
-     {{ else if eq .service "spotify" }}
-     <svg class="stroke-current icon text-gray-600" fill="none" stroke-width="2" stroke-linecap="round"
-      stroke-linejoin="round" id="Regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <title>social-music-spotify</title>
-      <circle class="cls-1" cx="11.99" cy="12" r="11.25" />
-      <path class="cls-1"
-       d="M6.94,7.09A1.53,1.53,0,0,1,8.29,5.41a19,19,0,0,1,9.49,1.38,1.54,1.54,0,0,1,.74,2.15,1.34,1.34,0,0,1-1.72.57,15.68,15.68,0,0,0-4.17-1.17,15.71,15.71,0,0,0-4.16,0A1.36,1.36,0,0,1,6.94,7.09Z" />
-      <path class="cls-1"
-       d="M7.36,12.12a1.29,1.29,0,0,1,1.17-1.32,16.51,16.51,0,0,1,3.72.11,16.27,16.27,0,0,1,4,1.06,1.29,1.29,0,0,1,.76,1.5,1.24,1.24,0,0,1-1.69.84,14.12,14.12,0,0,0-6.57-1,1.24,1.24,0,0,1-1.35-1.19Z" />
-      <path class="cls-1"
-       d="M15.72,18.35a1.18,1.18,0,0,1-1.6.82,12.38,12.38,0,0,0-2.93-.78,12.63,12.63,0,0,0-2.43-.11,1.18,1.18,0,0,1-1.24-1.18,1.08,1.08,0,0,1,1-1.08,14.86,14.86,0,0,1,3,.12,14.55,14.55,0,0,1,3.59,1A1.06,1.06,0,0,1,15.72,18.35Z" />
-     </svg>
-     {{else}}
-     <svg class="stroke-current icon text-gray-600" fill="none" stroke-width="2" stroke-linecap="round"
-      stroke-linejoin="round" id="Regular" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <title>external-link</title>
-      <path class="a" d="M15.75,15.75v6a1.5,1.5,0,0,1-1.5,1.5h-12a1.5,1.5,0,0,1-1.5-1.5v-12a1.5,1.5,0,0,1,1.5-1.5H3" />
-      <path class="a" d="M15.75,12.75v-3h-4.5a1.5,1.5,0,0,0-1.5,1.5v3s-3-1.5-3-4.5v-3a3,3,0,0,1,3-3h6v-3l7.5,6Z" />
-     </svg>
-     {{end}}
+      <title>button-play</title>
+      <circle class="a" cx="12" cy="11.998" r="11.25" />
+      <path class="a" d="M9,15.613a1.636,1.636,0,0,0,2.712,1.231L17.25,12,11.712,7.153A1.635,1.635,0,0,0,9,8.384Z" />
+      </svg>
     </div>
+    {{ end }}
    </div>
 
    <div class="px-6 py-3 flex flex-initial bg-gray-200">
@@ -58,9 +65,7 @@
    </div>
 
   </div>
-  {{with .url}}
- </a>
- {{end}}
+</a>
 
  {{end}}
 
