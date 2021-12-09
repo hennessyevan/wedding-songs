@@ -1,35 +1,30 @@
 {{ define "main" }}
 
-<div class="py-16 flex flex-col items-start mx-auto max-w-md text-gray-700">
+<div class="py-16 px-4 flex flex-col items-center justify-start text-gray-700 w-full">
 
+  <div class="max-w-lg">
 <h3 class="mb-6 text-2xl font-semibold text-gray-800">Nativity Band Wedding Hymns</h3>
 <div class="text-sm">
   <p>
-    Below you will find a list of songs that we played at weddings in the past.
+    The suggestion <span class="badge offertory">tags</span> are meant to help you find songs for each part of the
+    mass/service.
   </p>
   <br />
-  <p>
-    You'll notice <span class="badge offertory mr-0">tags</span> on each song that are suggestions of when to include
-    them in
-    the
-    wedding service or mass. While
-    we
-    think these are helpful, feel free to use these hymns at any point in the mass/service.
-  </p>
-  <br />
-  <p>
-    While we are open to other hymn suggestions, the instruction of the Catholic Church required that a song needs to be
-    able to be
-    considered appropriate as a hymn to be played at a mass. This usually means that the song references or is based on
+  <p class="pb-4">
+    These songs are ones that we've played at weddings in the past that we think you'll like. It should open a page where
+    you can listen to it on your platform of choice.
+    <br /><br />
+    While we are open to other selections, the instruction of the Catholic Church required that a song needs to be
+    able to be considered appropriate as a hymn to be played in a liturgical setting. This usually means that the song
+    must
+    reference or be based on
     scripture, the liturgy, the Sacraments, etc.
-  </p>
-  <br />
-  <p>
-    This includes any songs that you hear at one of our masses, worship songs, traditional hymns, songs that speak
-    directly about the liturgy of the Sacrament of Marriage or songs that are based on scripture, etc.
+    <br /><br />
+    We often play other hymns at mass on Sunday that are beautiful as well, any of those hymns can be chosen.
   </p>
 </div>
 
+<div class="flex flex-col w-full max-w-md justify-content-start">
  {{ range sort $.Site.Data.songs "name" }}
   {{ $url := .url | default (printf "//songwhip.com/%s/%s" (urlize .artist) (urlize .name)) }}
   <a class="w-full" href="{{ $url  }}" target="_blank">
@@ -68,6 +63,7 @@
 </a>
 
  {{end}}
+</div>
 
 </div>
 
